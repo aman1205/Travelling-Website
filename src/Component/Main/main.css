@@ -1,0 +1,107 @@
+.main {
+  width: 100%;
+}
+.main .sectitle .title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: black;
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .sectitle .title::after {
+  position: relative;
+  content: " ";
+  background: orchid;
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 0.5px;
+  z-index: -1;
+}
+.main .seccontent {
+  justify-content: center;
+  gap: 1.5rem;
+  width: 33%;
+  /* grid-template-columns: 33% 33% 33%; */
+}
+.seccontent .singledestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  background: rgb(61, 100, 120);
+  align-items: center;
+  box-shadow: 0 2px 4px rgb(209, 154, 154);
+  overflow: hidden;
+  border:1px solid black;
+
+}
+.singledestination .imgdiv {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.imgdiv img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 2s ease;
+}
+.singledestination .cardinfo {
+  padding: 1rem;
+}
+.cardinfo .destitle {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.cardinfo .continent {
+  gap: 0.5rem;
+}
+
+.cardinfo .continent .icon {
+  font-size: 18px;
+}
+
+.cardinfo .continent .name {
+  color: rgb(13, 13, 13);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cardinfo .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid rgb(4, 4, 4);
+  border-bottom: 1.5px solid rgb(14, 14, 14);
+}
+
+.cardinfo .fees .grade {
+  color: rgb(21, 21, 22);
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardinfo .fees .grade small{
+  text-align: center;
+  background:pink;
+  border-radius: 1rem;
+  color: white;
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.cardinfo .fees .price {
+  font-size: 2rem;
+  color: black;
+}
+.cardinfo .desc {
+  font-size: 13.5px;
+  font-weight: 500;
+}

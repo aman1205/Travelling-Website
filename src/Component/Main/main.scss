@@ -1,0 +1,125 @@
+.main{
+    width: 100%;
+
+    .sectitle{
+        .title{
+            position: relative;
+            width: max-content;
+            color:black;
+            margin: 1rem 0;
+            z-index: 2;
+        
+            &::after{
+            position: relative;
+            content:' ';
+            background:orchid;
+            height: 5px;
+            width: 120px;
+            right: 0;
+            bottom: .5px;
+            z-index:-1;
+            }
+        }
+
+    }
+
+    .seccontent{
+         justify-content: center;
+         gap: 1.5rem;
+         border: 1px solid black;
+         width:33%;
+
+        .singledestination{
+            height: 100%;
+            display: grid;
+            row-gap: 10px;
+            border-radius: 10px;
+            background:rgb(227, 237, 242);
+            align-items: center;
+            box-shadow: 0 2px 4px rgb(209, 154, 154);
+            overflow: hidden;
+    
+            .imgdiv{
+                height:100px;
+                width: 100%;
+                overflow:hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+
+                }
+       
+            }
+
+            .cardinfo{
+                padding: 1rem;
+
+                .destitle{
+                    color: black;
+                    font-size: 1.25rem;
+                }
+                .continent{
+                     gap: .5rem;
+
+                    .icon{
+                        font-size:18px ;
+                    }
+                    .name{
+                         color: rgb(13, 13, 13);
+                         font-weight: 400;
+                         font-size: 14px;
+                        }
+       
+                }
+
+
+
+                .fees{
+                    width:100% ;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    margin: 1rem 0;
+                    border-top: 1.5px solid greenyellow;
+                    border-bottom: 1.5px solid greenyellow;
+
+                    .grade{
+                        color:blue;
+                        max-width: 100px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                
+                        small{
+                           text-align: center;
+                           background: black;
+                           border-radius: 1rem;
+                           color: white;
+                           padding:1px 10px;
+                           font-size: 10px; 
+                        }
+                    }
+
+                    .price{
+                        font-size:2rem ;
+                        color: black;
+
+                    }
+                }
+
+                .desc{
+                    font-size: 13.5px;
+                    font-weight: 500;
+                    }
+
+
+            }
+
+        } 
+
+    }
+
+}
