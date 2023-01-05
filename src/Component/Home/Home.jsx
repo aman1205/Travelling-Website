@@ -1,8 +1,12 @@
-import React from 'react'
+ import React from 'react'
+import { useState } from 'react'
 import {GrLocation} from 'react-icons/gr'
 import {HiFilter} from 'react-icons/hi'
 import  './home.css'
 function Home() {
+  const [Price,setPrice]=useState(0);
+  
+
   return (
     <section className='home'>
         <div className="overlay"> </div>
@@ -36,10 +40,10 @@ function Home() {
           <div className="priceinput">
             <div className='label_total flex'>
               <label htmlFor="price">Max Budget:</label>
-              <h3 className='total'>15000</h3>
+              <h3 className='total'>{Price}</h3>
             </div>
             <div className="input flex">
-              <input type="range" max="15000" min="5000" />
+              <input id='prc' type="range" step="1000" max="15000" min="1000" onChange={(e)=>setPrice(e.target.value)} />
             </div>
           </div>
           <div className="searchoption flex">

@@ -16,28 +16,28 @@ export default function Navbar() {
     <section className='navsectionn'>
         <header className="header flex">
             <div className="logodiv">
-                <a href="#" className='logo'><h1 ><MdOutlineTravelExplore className="icon"/>Tremendous Trip</h1></a>
+                <a href="index.html" className='logo'><h1 ><MdOutlineTravelExplore className="icon"/>Tremendous Trip</h1></a>
             </div>
 
             <div className={data}>
                 <ul className="navlist flex">
                     <li className="navitem">
-                        <a href="#" className="navlink">Home</a>
+                        <a href="index.html" className="navlink">Home</a>
                     </li>
                     <li className="navitem">
-                        <a href="#" className="navlink">Blog</a>
+                        <a href="index.html" className="navlink">Blog</a>
                     </li>
                     <li className="navitem">
-                        <a href="#" className="navlink">About</a>
+                        <a href="index.html" className="navlink">About</a>
                     </li>
                     <li className="navitem">
-                        <a href="#" className="navlink">Any</a>
+                        <a href="index.html" className="navlink">Any</a>
                     </li>
                     <li className="navitem">
-                        <a href="#" className="navlink">Contact</a>
+                        <a href="index.html" className="navlink">Contact</a>
                     </li>
                     <button className='btn'>
-                        <a href="#">Visit-US</a>
+                        <a href="index.html">Visit-US</a>
                     </button>
                 </ul>
 
