@@ -1,0 +1,130 @@
+.point {
+  max-width: 1500px;
+}
+.point .sectitle .title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: rgb(238, 19, 19);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.point .sectitle .title::after {
+  position: absolute;
+  content: " ";
+  background: orchid;
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.point .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.point .secContent .First {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  background: rgb(227, 237, 242);
+  align-items: center;
+  box-shadow: 0 2px 4px rgb(209, 154, 154);
+  overflow: hidden;
+}
+.point .secContent .First:hover {
+  background: rgb(4, 209, 175);
+  box-shadow: 0 4px 4px rgb(247, 210, 210);
+  transition: 0.3s ease;
+}
+.point .secContent .First .Divimg {
+  height: 240px;
+  width: 100%;
+  overflow: hidden;
+}
+.point .secContent .First .Divimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.point .secContent .First .Divimg:hover img {
+  transform: scale(1.1);
+}
+.point .secContent .First .cardinfo {
+  padding: 1rem;
+}
+.point .secContent .First .cardinfo .destitle {
+  color: black;
+  font-size: 1.25rem;
+}
+.point .secContent .First .cardinfo .continent {
+  gap: 0.5rem;
+}
+.point .secContent .First .cardinfo .continent .icon {
+  font-size: 18px;
+}
+.point .secContent .First .cardinfo .continent .name {
+  color: rgb(13, 13, 13);
+  font-weight: 400;
+  font-size: 14px;
+}
+.point .secContent .First .cardinfo .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid rgb(167, 241, 57);
+  border-bottom: 1.5px solid greenyellow;
+}
+.point .secContent .First .cardinfo .fees .grade {
+  color: blue;
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.point .secContent .First .cardinfo .fees .grade small {
+  text-align: center;
+  background: black;
+  border-radius: 1rem;
+  color: white;
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.point .secContent .First .cardinfo .fees .price {
+  font-size: 2rem;
+  color: black;
+}
+.point .secContent .First .cardinfo .desc {
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, cursive;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .First {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .First {
+    height: auto;
+  }
+}/*# sourceMappingURL=Test.css.map */
